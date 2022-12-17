@@ -7,22 +7,22 @@
 </head>
 <body>
 <form method="post">
-	<p>Значения вводить через запятую.</p> 
-	<input name="str1" type="text" placeholder="Первая строка" style="width: 120px;">
+    <p>Значения вводить через запятую.</p> 
+    <input name="str1" type="text" placeholder="Первая строка" style="width: 120px;">
     <br>
     <input name="str2" type="text" placeholder="Вторая строка" style="width: 120px;">
     <br>
     <input name="str3" type="text" placeholder="Третья строка" style="width: 120px;">
     <br>
-	<input name="str4" type="text" placeholder="Четвёртая строка" style="width: 120px;">
-	<br>
-	<input name="str5" type="text" placeholder="Пятая строка" style="width: 120px;">
-	<br>
-	<br>
+    <input name="str4" type="text" placeholder="Четвёртая строка" style="width: 120px;">
+    <br>
+    <input name="str5" type="text" placeholder="Пятая строка" style="width: 120px;">
+    <br>
+    <br>
     <input type="submit" value="Ок" name="Ok" value="Ok" style="margin-left: 45px;">
-	<br>
-	<br>
-	<?php
+    <br>
+    <br>
+    <?php
     if(isset($_POST['Ok']))
     {
 	  $arr = array(explode(',', $_POST['str1'])
